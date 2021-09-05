@@ -13,18 +13,18 @@ yarn add cmdexist # or if you use yarn
 ```ts
 /* SINGLE FILE TO TEST */
 function singleFileToTest() {
-    CheckIfExist("node").then((exec) => console.log(`node is ${exec}`));
+  CheckIfExist("node").then((exec) => console.log(`node is ${exec}`));
 }
 
 /* MULTIPLE FILES TO TEST */
 async function multipleFilesToTest() {
-    // Set as `const` so TypeScript will correctly show the entries in toCheck array.
-    const toCheck = ["npm", "node", "yarn", "python", "docker"] as const;
-    const [result, details] = await CheckIfAllExist(toCheck);
+  // Set as `const` so TypeScript will correctly show the entries in toCheck array.
+  const toCheck = ["npm", "node", "yarn", "python", "docker"] as const;
+  const [result, details] = await CheckIfAllExist(toCheck);
 
-    details; // We can see that it shows the every entries in `toCheck`.
-    console.log(result);
-    console.log(details);
+  details; // We can see that it shows the every entries in `toCheck`.
+  console.log(result);
+  console.log(details);
 }
 ```
 
