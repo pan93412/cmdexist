@@ -4,8 +4,10 @@ import { NotFile } from "./exceptions/NotFile";
 import { ExeList } from "./types/ExeList";
 import { R_OK, X_OK } from "constants";
 
-function GetPath(): string[] {
-  const envPaths = process.env["PATH"]?.split(":");
+const pathSeparator = process.platform === "win32" ? ";" : ":";
+
+export function GetPath(): string[] {
+  const envPaths = process.env["PATH"]?.split(pathSeparator);
   if (!envPaths) throw new Error("PATH is not defined");
 
   return envPaths;
