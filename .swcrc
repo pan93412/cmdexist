@@ -6,8 +6,7 @@
       "dynamicImport": false,
       "decorators": false
     },
-    "target": "es2015",
-    "loose": true
+    "target": "es2015"
   },
   "env": {
     "target": {
