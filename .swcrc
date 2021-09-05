@@ -12,7 +12,7 @@
     "target": {
       "node": "10"
     },
-    "mode": "usage",
+    "mode": "entry",
     "coreJs": "3.17",
     "shippedProposals": true
   },

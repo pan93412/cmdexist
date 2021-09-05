@@ -1,3 +1,4 @@
+import "core-js";
 import path from "path";
 import fsPromise from "fs/promises";
 import { NotFile } from "./exceptions/NotFile";
