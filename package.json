@@ -1,0 +1,17 @@
+{
+  "name": "cmdexist",
+  "description": "The cross-platform and super-fast library which can check if a command or even the commands bundle exist.",
+  "author": "pan93412 <pan93412@gmail.com>",
+  "license": "MIT",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "devDependencies": {
+    "@types/node": "^16.7.10",
+    "typedoc": "^0.21.9",
+    "typescript": "^4.4.2"
+  },
+  "optionalDependencies": {
+    "@types/command-exists": "^1.2.0",
+    "command-exists": "^1.2.9"
+  }
+}
