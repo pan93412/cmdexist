@@ -3,7 +3,7 @@
   "description": "The cross-platform, super-fast and zero-dependencies library which can check if a command or even the commands bundle exist.",
   "author": "pan93412 <pan93412@gmail.com>",
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.0.1-a",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
