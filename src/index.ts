@@ -23,6 +23,11 @@ async function EnsureFileExist(filePath: string): Promise<void> {
     throw new Error(`${filePath} is not executable`);
 }
 
+/**
+ * Check if the executable file (exeName) is in the PATH.
+ * @param exeName The name of the executable file.
+ * @returns If it existed, returns true; otherwise, returns false.
+ */
 export async function CheckIfExist(exeName: string): Promise<boolean> {
   const envPaths = GetPath();
 
@@ -39,6 +44,13 @@ export async function CheckIfExist(exeName: string): Promise<boolean> {
   }
 }
 
+/**
+ * Check if all the executable files in exeNames are in the PATH.
+ * @param exeNames The list of the executable filename.
+ * @returns
+ *  - First Entry: If all of them existed, returns true; otherwise, returns false.
+ *  - Second Entry: The details test result of every executable files.
+ */
 export async function CheckIfAllExist<T extends readonly string[]>(
   exeNames: T
 ): Promise<[boolean, ExeList<T>]> {
