@@ -28,7 +28,7 @@ async function multipleFilesToTest() {
 }
 ```
 
-For more information, See the docs and examples.
+For more information, See the [docs](https://pan93412.github.io/cmdexist/) and `examples/` folder.
 
 ## Benchmarks
 
