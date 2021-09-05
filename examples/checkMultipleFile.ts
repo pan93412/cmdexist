@@ -1,7 +1,7 @@
 import { CheckIfAllExist } from "../src";
 
 // Set as `const` so TypeScript will correctly show the entries in toCheck array.
-const toCheck = ["npm", "node", "yarn", "python", "docker"] as const;
+const toCheck = ["npm", "node", "yarn", "python", "docker", "helloaaaaewmkfewdkwodl"] as const;
 
 async function main() {
   const [result, details] = await CheckIfAllExist(toCheck);
