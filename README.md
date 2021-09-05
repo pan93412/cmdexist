@@ -1,7 +1,7 @@
 # `cmdexist`
 
-The cross-platform and super-fast library which can
-check if a command or even the commands bundle exist.
+The cross-platform, super-fast and zero-dependencies library
+which can check if a command or even the commands bundle exist.
 
 ## Usage
 
